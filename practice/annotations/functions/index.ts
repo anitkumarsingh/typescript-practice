@@ -13,3 +13,11 @@ function multiple(a: number, b: number): number {
 const divide = function (a: number, b: number): number {
 	return a / b;
 };
+
+const noReturnFunc = (message: string): void => {
+	console.log(message);
+};
+
+const throwNewError = (message: string) => {
+	throw new Error(message);
+};
