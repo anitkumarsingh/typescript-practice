@@ -13,5 +13,5 @@ axios.get(url).then(res=>{
  const id = todos.id;
  const title = todos.title;
  const completed  = todos.completed
- logTodos(id,completed,title)
+ logTodos(id,title,completed)
 })

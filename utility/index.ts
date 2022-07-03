@@ -1,4 +1,4 @@
-export const logTodos = (id,title,completed) =>{
+export const logTodos = (id:number,title:string,completed:boolean) =>{
   console.log(`
   The TODOS has a ID of : ${id}
   has a tile of : ${title}
