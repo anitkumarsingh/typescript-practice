@@ -21,3 +21,27 @@ const noReturnFunc = (message: string): void => {
 const throwNewError = (message: string) => {
 	throw new Error(message);
 };
+
+const todayWeather = {
+	date: new Date(),
+	weather: 'raining'
+};
+
+const logWeather = (todayWeather: { date: Date; weather: string }): void => {
+	console.log(todayWeather.date);
+	console.log(todayWeather.weather);
+};
+
+// destructuring
+const logWeatherWithDestructuring = ({
+	date,
+	weather
+}: {
+	date: Date;
+	weather: string;
+}): void => {
+	console.log(date);
+	console.log(weather);
+};
+
+logWeather(todayWeather);
