@@ -1,4 +1,5 @@
 import axios from "axios";
+import {logTodos} from '../utility';
 
 const url = 'https://jsonplaceholder.typicode.com/todos/2';
 
@@ -12,9 +13,5 @@ axios.get(url).then(res=>{
  const id = todos.id;
  const title = todos.title;
  const completed  = todos.completed
- console.log(`
-   The TODOS has a ID of : ${id}
-   has a tile of : ${title}
-   whether it has been completed of not ? : ${completed}
- `)
+ logTodos(id,completed,title)
 })
