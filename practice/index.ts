@@ -10,8 +10,6 @@ completed:boolean
 }
 axios.get(url).then(res=>{
  const todos = res.data as TODO;
- const id = todos.id;
- const title = todos.title;
- const completed  = todos.completed
+ const {id,title,completed} = todos;
  logTodos(id,title,completed)
 })
