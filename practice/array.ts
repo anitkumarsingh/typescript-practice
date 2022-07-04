@@ -19,4 +19,4 @@ const myCars = carMaker.map((car: string): string => {
 });
 
 // 3. Not allow to add different type
-carMaker.push(100);
+carMaker.push('100');
