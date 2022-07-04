@@ -7,4 +7,10 @@ const drinks = {
 };
 
 const cocacola = ['coca cola', true, 40]; // array
-const cocacola1: [string, boolean, number] = ['coca cola', true, 40];
+const cocacola1: [string, boolean, number] = ['coca cola', true, 40]; // tuples
+
+// with type alias
+
+type Drinks = [string, boolean, number];
+
+const sprites: Drinks = ['sprites', true, 89];
