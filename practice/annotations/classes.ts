@@ -1,17 +1,23 @@
 class Vehicle {
-	drive(): void {
-		console.log('chugga chugga');
-	}
 	hunk(): void {
 		console.log('beep');
 	}
+	protected reverse(): void {
+		console.log('supported');
+	}
 }
 
+const vehicle = new Vehicle();
+// vehicle.reverse();
+
 class Car extends Vehicle {
-	drive(): void {
+	private drive(): void {
 		console.log('vroom');
+	}
+	startDrivingProcess(): void {
+		this.drive();
 	}
 }
 const car = new Car();
-car.drive();
+car.startDrivingProcess();
 car.hunk();
